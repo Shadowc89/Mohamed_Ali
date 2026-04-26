@@ -1283,7 +1283,7 @@
             <button class="btn-atomix" onclick="handleLogin()">تحقق من الكود <i class="fa-solid fa-bolt"></i></button>
             <a href="https://t.me/mr_mohamedali2SC" target="_blank"
                 style="display:inline-block; margin-top:25px; color:var(--text-dim); text-decoration:none; font-size:14px; font-weight:700"><i
-                    class="fa-brands fa-telegram" style="color:#0088cc"></i> تواصل مع الدعم لتوليد كود</a>
+                    class="fa-brands fa-telegram" style="color:#0088cc"></i> تواصل مع المستر لشراء كود</a>
         </div>
     </div>
 
@@ -1392,7 +1392,7 @@
 
                         <div style="display:flex; gap:10px;">
                             <button class="btn-atomix" onclick="generateRandomCode()"><i
-                                    class="fa-solid fa-shuffle"></i> توليد عشوائي</button>
+                                    class="fa-solid fa-shuffle"></i> انشاء عشوائي</button>
                             <button class="btn-atomix" style="background:var(--bg-input); border-color:#333; color:#fff"
                                 onclick="addCustomCode()"><i class="fa-solid fa-plus"></i> إضافة المخصص</button>
                         </div>
@@ -1448,7 +1448,7 @@
                         </div>
 
                         <button class="btn-ghost" onclick="generateQuestionForms()"
-                            style="margin-bottom: 20px; width: 100%; justify-content: center; padding: 15px; border-color: var(--gold-core); color: var(--gold-core);">توليد
+                            style="margin-bottom: 20px; width: 100%; justify-content: center; padding: 15px; border-color: var(--gold-core); color: var(--gold-core);">انشاء
                             خانات الأسئلة <i class="fa-solid fa-list-ol"></i></button>
 
                         <div id="dynamic-questions-container">
@@ -1841,7 +1841,7 @@
             document.querySelectorAll('#lec-title, #lec-video, #lec-hw-video, #lec-pdf').forEach(i => i.value = '');
         }
 
-        // توليد خانات الأسئلة ديناميكياً
+        // انشاء خانات الأسئلة ديناميكياً
         function generateQuestionForms() {
             const count = parseInt(document.getElementById('exam-q-count').value);
             if (!count || count < 1) return showToast('برجاء تحديد عدد أسئلة صحيح', 'error');
