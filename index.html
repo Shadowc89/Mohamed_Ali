@@ -1643,10 +1643,9 @@
             if (!localStorage.getItem('atomix_lecs')) localStorage.setItem('atomix_lecs', JSON.stringify([]));
             if (!localStorage.getItem('atomix_exams')) localStorage.setItem('atomix_exams', JSON.stringify([]));
             if (!localStorage.getItem('atomix_locks')) localStorage.setItem('atomix_locks', JSON.stringify({}));
-            if (!localStorage.getItem('atomix_valid_codes')) localStorage.setItem('atomix_valid_codes', JSON.stringify(['12345']));
+            if (!localStorage.getItem('atomix_valid_codes')) localStorage.setItem('atomix_valid_codes', JSON.stringify(['118218']));
             if (!localStorage.getItem('atomix_users')) localStorage.setItem('atomix_users', JSON.stringify([]));
             if (!localStorage.getItem('atomix_code_durations')) localStorage.setItem('atomix_code_durations', JSON.stringify({}));
-            if (!localStorage.getItem('atomix_msg')) localStorage.setItem('atomix_msg', 'نظام atomix Labs يعمل بكفاءة.');
         }
         initDB();
 
@@ -1687,7 +1686,7 @@
                 renderLecsAndExamsTables();
                 showToast('تم تهيئة لوحة القيادة');
             } else {
-                if (!validCodes.includes(code) && code !== '12345') return showToast('عفواً، الكود غير مسجل في قاعدة البيانات', 'error');
+                if (!validCodes.includes(code) && code !== '118218') return showToast('عفواً، الكود غير مسجل في قاعدة البيانات', 'error');
 
                 let users = JSON.parse(localStorage.getItem('atomix_users')) || [];
                 if (!users.includes(code)) { users.push(code); localStorage.setItem('atomix_users', JSON.stringify(users)); }
